@@ -1,10 +1,42 @@
-function comprar(item) {
-  const popup = document.getElementById("popup");
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  popup.innerText = item + " adicionado ao carrinho!";
-  popup.style.display = "block";
+<header>
+  <h1>Dark Store</h1>
+  <p>Estilo que domina a rua</p>
+</header>
 
-  setTimeout(() => {
-    popup.style.display = "none";
-  }, 2000);
-}
+<section class="produtos">
+
+  <div class="card">
+    <h2>Camiseta Black</h2>
+    <p>R$ 79,90</p>
+    <button onclick="comprar('Camiseta Black')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h2>Moletom Dark</h2>
+    <p>R$ 149,90</p>
+    <button onclick="comprar('Moletom Dark')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h2>Boné Street</h2>
+    <p>R$ 59,90</p>
+    <button onclick="comprar('Boné Street')">Comprar</button>
+  </div>
+
+</section>
+
+<div id="popup"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
